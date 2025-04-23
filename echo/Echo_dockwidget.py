@@ -69,6 +69,8 @@ class SubWidgetTool(QtWidgets.QDockWidget):
     def __init__(self, sub_form_class, gui_file, parent=None):
         super(SubWidgetTool, self).__init__(parent)
 
+        QgsMessageLog.logMessage("Changes in main???", "TEST")
+
         # UI
         self.ui = sub_form_class()
         self.ui.setupUi(self)
